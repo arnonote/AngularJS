@@ -1,2 +1,2 @@
-var app = angular.module('myApp',['myApp.controllers']);
+var app = angular.module('myApp',['myApp.controllers','myApp.directives']);
 
