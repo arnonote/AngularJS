@@ -9,6 +9,11 @@ app.controller('RootCtrl', function($scope)
 		{title:"Han Solo", subtitle:"Commandant du faucon millenium", src:"img/han.jpg", type:"men"},
 		{title:"Chewbacca", subtitle:"Fidèle compagnon d'Han Solo", src:"img/chewie.jpg", type:"other"}
 	];
+	
+	$scope.hello = function(index)
+	{
+		alert('Hello '+$scope.characters[index].title)
+	}
 });
 
 

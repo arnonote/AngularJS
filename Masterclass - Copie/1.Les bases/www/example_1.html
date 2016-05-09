@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="myApp" ng-controller="RootCtrl">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- custom styles -->
+		<link rel="stylesheet" href="css/styles.css" />
+		
+		<!-- angularjs -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+		
+		<!-- js -->
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+	</head>
+	<body>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" class="form-control" ng-model="name" />
+		</div>
+		
+		<div class="form-group">
+			<label>Email</label>
+			<input type="text" class="form-control" ng-model="email" />
+		</div>
+		
+		<hr>
+		
+		<h2>Hello {{name}}!</h2>
+		
+		<div ng-controller="OtherCtrl">
+			<h2>What's new {{name}}?</h2>
+			<h3 ng-bind="email"></h3>
+		</div>
+		
+		
+	</body>
+</html>
