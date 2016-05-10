@@ -19,23 +19,26 @@
 	</head>
 	
 	<body>
-		<h1>Star wars characters</h1>
-		
+	
+		<h1>Star Wars characters</h1>
 		<select ng-model="type" class="form-control">
 			<option value="">Everyone</option>
 			<option value="women">Women</option>
 			<option value="men">Men</option>
 			<option value="other">Other</option>
 		</select>
+		<!--
+		<sw-card title="Leia" subtitle="Princesse Leia Organa d'Aldérande" src="img/leia.png"></sw-card>
+		-->
 		
 		<sw-card 
-			ng-click = "hello($index);"
-			ng-hide = "character.type != type && type"
-			ng-repeat = "character in characters"
+			ng-hide="character.type!=type && type" 
+			ng-click="hello($index);" 
+			ng-repeat="character in characters" 
 			title="{{character.title}}" 
 			subtitle="{{character.subtitle}}" 
 			src="{{character.src}}">
 		</sw-card>
 		
-	</body>
+  </body>
 </html>

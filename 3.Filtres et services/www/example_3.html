@@ -15,6 +15,7 @@
 		<!-- custom js -->
 		<script src="js/app.js"></script>
 		<script src="js/controllers.js"></script>
+		<script src="js/services.js"></script>
 		<script src="js/directives.js"></script>
 	</head>
 	
@@ -28,10 +29,14 @@
 			<option value="other">Other</option>
 		</select>
 		
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Name" ng-model="name" />
+		</div>
+		
 		<sw-card 
 			ng-hide="character.type!=type && type" 
 			ng-click="hello($index);" 
-			ng-repeat="character in characters" 
+			ng-repeat="character in characters | filter:name | orderBy:'title':false" 
 			title="{{character.title}}" 
 			subtitle="{{character.subtitle}}" 
 			src="{{character.src}}">

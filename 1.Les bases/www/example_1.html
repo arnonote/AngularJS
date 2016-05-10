@@ -2,40 +2,44 @@
 <html ng-app="myApp" ng-controller="RootCtrl">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
+
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		
+
 		<!-- custom styles -->
 		<link rel="stylesheet" href="css/styles.css" />
-		
+
 		<!-- AngularJS --> 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-		
+
 		<!-- custom js -->
 		<script src="js/app.js"></script>
 		<script src="js/controllers.js"></script>
-		<script src="js/directives.js"></script>
+
 	</head>
-	
 	<body>
-	
-		<h1>Star Wars characters</h1>
-		<select ng-model="type" class="form-control">
-			<option value="">Everyone</option>
-			<option value="women">Women</option>
-			<option value="men">Men</option>
-			<option value="other">Other</option>
-		</select>
 		
-		<sw-card 
-			ng-hide="character.type!=type && type" 
-			ng-click="hello($index);" 
-			ng-repeat="character in characters" 
-			title="{{character.title}}" 
-			subtitle="{{character.subtitle}}" 
-			src="{{character.src}}">
-		</sw-card>
+		<div class="form-group">
+			<label for="name_field">Name</label>
+			<input type="text" class="form-control" id="name_field" placeholder="Name" ng-model="name" />
+		</div>
 		
-  </body>
+		<div class="form-group">
+			<label for="email_field">Email</label>
+			<input type="text" class="form-control" id="email_field" placeholder="Email" ng-model="email" />
+		</div>
+
+		<hr>
+		
+		<h2>Hello {{name}}!</h2>
+		<p>Your email address is {{email}}</p>
+		
+		<div ng-controller="LogCtrl">
+			<h2>What's new {{name}}?</h2>
+			<p ng-bind="email"></p>
+		</div>
+
+	</body>
 </html>
+
+
