@@ -3,7 +3,7 @@ Présentation d’AngularJS - Conférence du 11 mai 2016 - EXIA.CESI
 Les bases : example_1.html
 ---------------------
  - Installation de la librairie  
-Création d’un projet type, arborescence, fichiers  
+  - Création d’un projet type, arborescence, fichiers  
  - Déclaration d’une application  
   - création d’une application simple  
  - Le Data-Binding bi-directionnel  
@@ -12,7 +12,7 @@ Création d’un projet type, arborescence, fichiers
   - la directive ng-bind  
   - Désactiver le binding bi-directionnel avec ::  
  - Création de contrôleurs  
-  -L’injection de dépendances  
+  - L’injection de dépendances  
   - $scope, la dépendance de contexte  
   - Héritage de contextes, exemple avec $timeout  
  
@@ -34,6 +34,6 @@ Les filtres
 
 Les services
 -----------------
-
+  
 Aller plus loin, développement mobile avec IonicFramework
 ===============
