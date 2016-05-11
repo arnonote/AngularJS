@@ -1,6 +1,6 @@
 Présentation d’AngularJS - Conférence du 11 mai 2016 - EXIA.CESI
 =================
-Les bases : example_1.html
+Les bases
 ---------------------
  - Installation de la librairie  
   - Création d’un projet type, arborescence, fichiers  
