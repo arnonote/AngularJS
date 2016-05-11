@@ -5,12 +5,12 @@ Les bases : example_1.html
  - Installation de la librairie  
 Création d’un projet type, arborescence, fichiers  
  - Déclaration d’une application  
-création d’une application simple  
+  - création d’une application simple  
  - Le Data-Binding bi-directionnel  
-La notation par accolades  
-La directive ng-model  
-la directive ng-bind  
-Désactiver le binding bi-directionnel avec ::  
+  - La notation par accolades  
+  - La directive ng-model  
+  - la directive ng-bind  
+  - Désactiver le binding bi-directionnel avec ::  
  - Création de contrôleurs  
 	L’injection de dépendances
 	$scope, la dépendance de contexte  
